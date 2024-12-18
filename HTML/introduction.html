@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <!-- 메타 정보 및 문서 기본 설정 -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- 파비콘, 타이틀 설정 -->
+    <link rel="icon" href="../assets/images/onlyLogo.png" type="image/x-icon" />
+    <title>교회 소개 - 우리 교회</title>
+
+    <!-- CSS 파일 연결 -->
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <link rel="stylesheet" href="../CSS/variables.css" />
+    <link rel="stylesheet" href="../CSS/components/header.css" />
+    <link rel="stylesheet" href="../CSS/components/footer.css" />
+
+    <!-- Font Awesome 아이콘 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+
+    <!-- GSAP 애니메이션 라이브러리 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  </head>
+  <body>
+    <div id="header-container"></div>
+
+    <main>
+      <!-- 히어로 섹션: 교회 소개 페이지 메인 이미지와 타이틀 -->
+      <section class="intro-hero">
+        <div class="intro-hero__content">
+          <h1>교회 소개</h1>
+          <p>하나님의 사랑으로 섬기는 우리 교회를 소개합니다</p>
+        </div>
+      </section>
+
+      <!-- 메인 콘텐츠 섹션 -->
+      <section class="intro-main">
+        <div class="intro-main__content">
+          <!-- 교회 비전 섹션 -->
+          <div class="intro-vision">
+            
+            <div class="vision-points">
+              <div class="vision-point">
+                <i class="fas fa-cross"></i>
+                <h3>예배 중심</h3>
+                <p>하나님을 예배하는 것을 가장 중요하게 여기는 교회</p>
+              </div>
+              <div class="vision-point">
+                <i class="fas fa-book-bible"></i>
+                <h3>말씀 중심</h3>
+                <p>성경 말씀을 바탕으로 신앙생활을 하는 교회</p>
+              </div>
+              <div class="vision-point">
+                <i class="fas fa-hands-helping"></i>
+                <h3>섬김 중심</h3>
+                <p>이웃을 섬기며 하나님의 사랑을 실천하는 교회</p>
+              </div>
+            </div>
+        
+
+          <!-- 교회 연혁 섹션: 타임라인 형식으로 표시 -->
+          <div class="intro-history">
+            <h2>교회 연혁</h2>
+            <div class="timeline">
+              <!-- 2020년: 교회 설립 -->
+              <div class="timeline-item">
+                <div class="timeline-date">2011</div>
+                <div class="timeline-content">
+                  <h3>교회 설립</h3>
+                  <p>하나님의 인도하심으로 교회가 설립되었습니다</p>
+                </div>
+              </div>
+              <!-- 2021년: 새 예배당 건축 -->
+              <div class="timeline-item">
+                <div class="timeline-date">2021</div>
+                <div class="timeline-content">
+                  <h3>새 예배당 건축</h3>
+                  <p>더 많은 성도들과 함께 예배드릴 수 있는 공간을 마련했습니다</p>
+                </div>
+              </div>
+              <!-- 2022년: 봉사활동 시작 -->
+              <div class="timeline-item">
+                <div class="timeline-date">2022</div>
+                <div class="timeline-content">
+                  <h3>지역사회 봉사활동 시작</h3>
+                  <p>지역 사회를 섬기는 다양한 봉사활동을 시작했습니다</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div id="footer-container"></div>
+    <script src="../JAVASCRIPT/components.js"></script>
+  </body>
+</html>

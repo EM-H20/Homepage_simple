@@ -1,0 +1,18 @@
+:root {
+  --color-primary: #333333;
+  --color-secondary: #666666;
+  --color-accent: #E5B8F4;
+  --color-bg-main: #ffffff;
+  --background-color: #E5E1DA;
+  --section-bg-color: #ffffff;
+  --card-bg-color: #ffffff;
+  --hero-bg-color: rgba(0, 0, 0, 0.5);
+
+  --font-main: "Noto Sans KR", sans-serif;
+  --spacing-small: 1rem;
+  --spacing-medium: 2rem;
+  --spacing-large: 4rem;
+
+  --header-height: 80px;
+  --footer-background: #F1F0E8;
+}

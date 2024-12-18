@@ -1,35 +1,107 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>홈페이지</title>
-    <link rel="stylesheet" href="../CSS/style.css">
-</head>
-<body>
-    <header>
-        <nav>
-            <div class="logo">로고</div>
-            <ul class="nav-links">
-                <li><a href="#">홈</a></li>
-                <li><a href="#">소개</a></li>
-                <li><a href="#">서비스</a></li>
-                <li><a href="#">연락처</a></li>
-            </ul>
-        </nav>
-    </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" href="../assets/images/onlyLogo.png" type="image/x-icon" />
+    <title>은샘침례교회</title>
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <link rel="stylesheet" href="../CSS/variables.css" />
+    <link rel="stylesheet" href="../CSS/components/header.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_MAPS_API_KEY"></script>
+  </head>
+  <body>
+    <div id="header-container"></div>
 
     <main>
-        <section class="hero">
-            <h1>환영합니다</h1>
-            <p>메인 콘텐츠 영역입니다</p>
-        </section>
+      <section class="hero">
+        <video class="hero__background" autoplay muted loop>
+          <source src="../assets/videos/background.mp4" type="video/mp4" />
+        </video>
+        <div class="hero__content">
+          <h1>하나님의 사랑으로</h1>
+          <p>함께 성장하는 우리 교회에 오신 것을 환영합니다</p>
+        </div>
+      </section>
+
+      <section id="notice" class="notice">
+        <div class="notice__content">
+          <h2 >공지사항</h2>
+          <div class="notice__list">
+            <div class="notice__item">
+              <span class="notice__date">2024.03.20</span>
+              <h3>부활절 특별 예배 안내</h3>
+              <p>
+                4월 7일 부활절 예배는 전 성도가 함께 드리는 연합예배로
+                진행됩니다.
+              </p>
+            </div>
+            <div class="notice__item">
+              <span class="notice__date">2024.03.15</span>
+              <h3>봄맞이 교회 대청소</h3>
+              <p>3월 30일 토요일 오전 9시부터 교회 대청소가 있습니다.</p>
+            </div>
+            <div class="notice__item">
+              <span class="notice__date">2024.03.10</span>
+              <h3>새가족 환영회 안내</h3>
+              <p>3월 첫째 주 새가족 환영회가 예배 후 친교실에서 있습니다.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="activities" class="activities">
+        <div class="activities__content">
+          <h2>교회 활동</h2>
+          <div class="activities__grid">
+            <div class="activity__item">
+              <div class="activity__image">
+                <img src="../assets/images/worship.jpg" alt="예배 모습" />
+              </div>
+              <div class="activity__info">
+                <h3>주일 예배</h3>
+                <p>온 성도가 함께 모여 하나님을 예배합니다</p>
+              </div>
+            </div>
+            <div class="activity__item">
+              <div class="activity__image">
+                <img src="../assets/images/bible-study.jpg" alt="성경 공부" />
+              </div>
+              <div class="activity__info">
+                <h3>성경 공부</h3>
+                <p>말씀을 깊이 배우고 나누는 시간</p>
+              </div>
+            </div>
+            <div class="activity__item">
+              <div class="activity__image">
+                <img src="../assets/images/youth.jpg" alt="청년부 활동" />
+              </div>
+              <div class="activity__info">
+                <h3>청년부 활동</h3>
+                <p>청년들의 신앙과 교제를 위한 모임</p>
+              </div>
+            </div>
+            <div class="activity__item">
+              <div class="activity__image">
+                <img src="../assets/images/volunteer.jpg" alt="봉사 활동" />
+              </div>
+              <div class="activity__info">
+                <h3>지역 봉사</h3>
+                <p>지역 사회를 섬기는 봉사 동</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-
-    <footer>
-        <p>&copy; 2024 홈페이지. All rights reserved.</p>
-    </footer>
-
-    <script src="../JAVASCRIPT/main.js"></script>
-</body>
-</html> 
+    <div id="footer-container"></div>
+    <script src="../JAVASCRIPT/components.js"></script>
+  </body>
+</html>
